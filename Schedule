@@ -1,0 +1,6 @@
+library(cronR)
+
+cmd <- cron_rscript("Data/Escooter/Escooter data collection.R")
+
+cron_add(cmd,frequency = "hourly",id= "job_hourly")
+
